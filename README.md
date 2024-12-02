@@ -1,6 +1,6 @@
-# Texture Switcher
+# D-stretchToBlender
 
-**Texture Switcher** is a Blender addon designed to streamline texture management using 3D format .obj with `.mtl` file modifications. It provides an intuitive way to load and switch textures generated with D-Stretch addon for ImageJ. Whole script works on the blender import operator of .obj files, tat loads both 3D model and defined textures.  
+**D-stretchToBlender** is a Blender addon designed to streamline texture management using 3D format .obj with `.mtl` file modifications. It provides an intuitive way to load and switch textures generated with D-Stretch addon for ImageJ. Whole script works on the blender import operator of .obj files, tat loads both 3D model and defined textures.  
 
 ---
 
