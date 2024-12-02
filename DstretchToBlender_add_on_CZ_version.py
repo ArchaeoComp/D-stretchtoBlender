@@ -1,5 +1,5 @@
 bl_info = {
-    "name": "DstertchToBlender Texture Switcher",
+    "name": "DstretchToBlender Texture Switcher",
     "blender": (3, 0, 0),
     "category": "Object",
 }
