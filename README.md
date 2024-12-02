@@ -1,6 +1,6 @@
 # Texture Switcher
 
-**Texture Switcher** is a Blender addon designed to streamline texture management and `.mtl` file modifications. It provides an intuitive way to switch between textures in a material and edit `.mtl` files directly from Blender.
+**Texture Switcher** is a Blender addon designed to streamline texture management using 3D format .obj with `.mtl` file modifications. It provides an intuitive way to load and switch textures generated with D-Stretch addon for ImageJ. Whole script works on the blender import operator of .obj files, tat loads both 3D model and defined textures.  
 
 ---
 
@@ -31,29 +31,32 @@
 
 ## Usage
 
+### `.mtl` File Editing and `.obj` File Importing
+1. Before importing .obj files into blender, please put your images from D-stretch into same folder as your .obj files and diffuse texture. 
+2. Click **Select Folder** to select a folder containing `.mtl` files and your 3D model.
+3. Ensure `.mtl` files and related textures are in the selected folder.
+4. Click **Change .mtl** to apply modifications.
+5. Import your .obj files into blender by standard operator, or drag and drop
+
 ### Texture Switching
 1. Select a mesh object with a material.
 2. Open the **Tool** tab in the `N` panel.
 3. Click **Switch Texture** to cycle through textures in the active material.
-
-### `.mtl` File Editing
-1. Click **Vybrat složku** to select a folder containing `.mtl` files.
-2. Ensure `.mtl` files and related textures are in the selected folder.
-3. Click **Change .mtl** to apply modifications.
 
 ---
 
 ## Requirements
 
 - **Blender Version**: 3.0 or higher.
-- **File Format**: `.mtl` files and associated texture images.
+- **File Format**: `.obj` files; `.mtl` files and associated texture images.
 
 ---
 
 ## Limitations
 
-- Works only with mesh objects and materials using node-based setups.
+- Works only with `.obj` files and `.mtl` files.
 - Assumes texture files follow a specific naming convention (`.jpg`, `_lre.jpg`, `_yre.jpg`, etc.).
+- Only supports `.jpg` files with specific color spaces from D-stretch. List of supported color spaces: lre, yre, crgb, ybk **Note** Could be changed in code itself (lines 70-81 of code), with limitation to four colourspaces. 
 
 ---
 
