@@ -62,7 +62,7 @@
 
 ## License
 
-Released under the **MIT License**, allowing free use, modification, and distribution.
+Released under the CC BY 3.0 License, encouraging modifications and adaptations for academic and research purposes.
 
 ---
 
